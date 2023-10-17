@@ -16,8 +16,8 @@ jobs:
       - name: Add remote 
         env:
           HF: ${{ secrets.HF }}
-        run: git remote add space https://qandeelfatima:$HF@huggingface.co/spaces/qandeelfatima/ImageToText
+        run: git remote add space https://qandeelfatima:$HF_IMAGETOTEXT@huggingface.co/spaces/qandeelfatima/ImageToText
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
-        run: git push --force https://qandeelfatima:$HF@huggingface.co/spaces/qandeelfatima/ImageToText
+        run: git push --force https://qandeelfatima:$HF_IMAGETOTEXT@huggingface.co/spaces/qandeelfatima/ImageToText
